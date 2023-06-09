@@ -28,8 +28,8 @@ router.post("/", async (req, res, next) => {
 		line_items: lineItems,
 		mode: "payment",
 		success_url:
-			"https://64835a3b6e99ca33e5d81c11--glittery-malasada-22e17e.netlify.app/order/success?session_id={CHECKOUT_SESSION_ID}",
-		cancel_url: "https://64835a3b6e99ca33e5d81c11--glittery-malasada-22e17e.netlify.app/cart",
+			"https://glittery-malasada-22e17e.netlify.app//order/success?session_id={CHECKOUT_SESSION_ID}",
+		cancel_url: "https://glittery-malasada-22e17e.netlify.app//cart",
 	})
 	res.send(session.url)
 })
